@@ -1,0 +1,196 @@
+.composer {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+
+    padding: 28px;
+
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+}
+
+.composer-header {
+    margin-bottom: 24px;
+}
+
+.composer-header h2 {
+    margin: 0 0 6px;
+
+    color: #0f172a;
+
+    font-size: 1.25rem;
+}
+
+.composer-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 0.9rem;
+}
+
+.composer-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    position: relative;
+}
+
+.form-group label {
+    color: #334155;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #0f172a;
+
+    font-size: 0.95rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 140px;
+
+    padding: 12px 14px;
+
+    line-height: 1.5;
+}
+
+.form-group select {
+    padding: 11px 12px;
+
+    cursor: pointer;
+}
+
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #4f46e5;
+
+    box-shadow:
+        0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.character-count {
+    align-self: flex-end;
+
+    color: #64748b;
+
+    font-size: 0.78rem;
+}
+
+.form-row {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 16px;
+}
+
+.error-message {
+    padding: 10px 12px;
+
+    border-radius: 7px;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    color: #b91c1c;
+
+    font-size: 0.85rem;
+}
+
+.composer-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    padding-top: 4px;
+}
+
+.composer-actions button {
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.secondary-button {
+    background: #ffffff;
+
+    border: 1px solid #cbd5e1;
+
+    color: #334155;
+}
+
+.secondary-button:hover {
+    background: #f8fafc;
+}
+
+.primary-button {
+    background: #4f46e5;
+
+    border: 1px solid #4f46e5;
+
+    color: #ffffff;
+}
+
+.primary-button:hover {
+    background: #4338ca;
+
+    border-color: #4338ca;
+}
+
+@media (max-width: 650px) {
+
+    .composer {
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .composer-actions {
+        flex-direction: column-reverse;
+    }
+
+    .composer-actions button {
+        width: 100%;
+    }
+}

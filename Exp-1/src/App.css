@@ -1,0 +1,233 @@
+.app {
+    min-height: 100vh;
+
+    background: #f8fafc;
+}
+
+.main-content {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 40px 24px 60px;
+}
+
+.page-header {
+    margin-bottom: 28px;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+
+    color: #0f172a;
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.page-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 0.95rem;
+}
+
+.posts-section {
+    margin-top: 32px;
+}
+
+.section-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+}
+
+.section-header h2 {
+    margin: 0;
+
+    color: #0f172a;
+
+    font-size: 1.25rem;
+}
+
+.section-header span {
+    color: #64748b;
+
+    font-size: 0.85rem;
+}
+
+.empty-state {
+    padding: 45px 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px dashed #cbd5e1;
+
+    border-radius: 12px;
+}
+
+.empty-state h3 {
+    margin: 0 0 6px;
+
+    color: #334155;
+}
+
+.empty-state p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 0.9rem;
+}
+
+.post-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.post-card {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 190px;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(15, 23, 42, 0.04);
+}
+
+.post-card-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.platform {
+    color: #4f46e5;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.status {
+    padding: 4px 9px;
+
+    border-radius: 999px;
+
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.status.draft {
+    background: #fef3c7;
+
+    color: #92400e;
+}
+
+.status.published {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+.post-content {
+    flex: 1;
+
+    margin: 0;
+
+    color: #475569;
+
+    line-height: 1.55;
+
+    white-space: pre-wrap;
+}
+
+.post-card-footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    padding-top: 14px;
+
+    border-top: 1px solid #f1f5f9;
+}
+
+.post-card-footer span {
+    color: #94a3b8;
+
+    font-size: 0.75rem;
+}
+
+.post-card-footer button {
+    padding: 7px 11px;
+
+    background: #ffffff;
+
+    border: 1px solid #fecaca;
+
+    border-radius: 6px;
+
+    color: #dc2626;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.post-card-footer button:hover {
+    background: #fef2f2;
+}
+
+@media (max-width: 900px) {
+
+    .post-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+
+    .main-content {
+        padding: 30px 16px 45px;
+    }
+
+    .page-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .post-grid {
+        grid-template-columns: 1fr;
+    }
+}
