@@ -1,0 +1,109 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #666;
+}
+
+.post-form,
+.filters,
+.analytics,
+.post-list {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.post-form {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.post-form h2 {
+  width: 100%;
+}
+
+input,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input {
+  flex: 1;
+  min-width: 250px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.analytics-summary,
+.platform-analytics {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.analytics-card {
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  min-width: 180px;
+}
+
+.analytics-card h3,
+.analytics-card h4 {
+  margin-top: 0;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.post-card h3 {
+  margin-top: 0;
+}
+
+.message {
+  text-align: center;
+}
+
+.error {
+  color: red;
+}
